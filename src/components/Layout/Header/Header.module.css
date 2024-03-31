@@ -1,0 +1,19 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.Header__nav{
+    display: flex;
+    justify-content: space-between;
+    gap:25px;
+}
+
+
+.Header__CartIcon{
+    position: relative;
+}
+

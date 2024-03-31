@@ -1,0 +1,48 @@
+.CartItem{
+    display: flex;
+    gap:23px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    position: relative;
+    padding:18px 28px 15px 18px;
+}
+
+.CartItem__image{
+    width: 150px;
+}
+
+.CartItem__bin{
+    position: absolute;
+    top:18px;
+    right:28px;
+}
+
+.info{
+    align-self: center;
+}
+
+.info__title{
+    align-self: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+}
+.info__price{
+    color: rgb(170, 170, 170);
+    font-size: 15px;
+    line-height: 18px;
+}
+.CartItem__price{
+    position: absolute;
+    bottom: 21px;
+    right: 18px;
+}
+.classItem__quantity{
+    margin: 0 25px;
+}
+.CartItem__quantityButton{
+    color:white;
+    background: rgb(255, 206, 127);
+    border-radius: 50%;
+}

@@ -1,0 +1,9 @@
+.Cart {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 100px;
+}
+
+.content{
+    min-height: 64.5vh;
+}
