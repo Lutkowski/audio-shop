@@ -59,4 +59,9 @@
     line-height: 21px;
 }
 
+.ProductCard__button:hover{
+    transition: background-color 0.5s ease;
+    transform: scale(1.1);
+}
+
 
