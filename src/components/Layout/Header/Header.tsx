@@ -10,12 +10,12 @@ const Header = () => {
     const itemsCount = useCartStore(state => state.getItemsCount());
     return (
         <header className={classes.Header}>
-            <Link to="/">
+            <Link to="/" className="Link">
                 <Logo className={classes.Header__Logo}/>
             </Link>
             <nav className={classes.Header__nav}>
                 <Icon className={classes.Header__Icon} src={likeIcon}></Icon>
-                <Link to="/cart">
+                <Link to="/cart" className="Link">
                     <div className={classes.Header__iconWrapper}>
                         <Icon src={cartIcon} className={classes.Header__CartIcon} data-count={itemsCount}></Icon>
                         {itemsCount > 0 && <span className={classes.Header__counter}>{itemsCount}</span>}

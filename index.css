@@ -12,3 +12,14 @@ body{
     line-height: 21px;
     color:black;
 }
+
+.Link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.Link:hover {
+    transition: filter 1s ease;
+    filter: brightness(0) saturate(100%) invert(65%) sepia(90%) saturate(5035%) hue-rotate(8deg) brightness(103%) contrast(103%);
+    color: rgb(255, 165, 66);
+}
