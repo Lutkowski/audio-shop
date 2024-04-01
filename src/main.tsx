@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home/Home.tsx";
 import Cart from "./pages/Cart/Cart.tsx";
+import NotFound from "./pages/errors/NotFound.tsx";
 
 const router = createBrowserRouter([
     {
@@ -15,7 +16,12 @@ const router = createBrowserRouter([
     {
         path: '/cart',
         element: <Cart/>
-    }])
+    },
+    {
+        path: '*',
+        element: <NotFound/>
+    }
+])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
