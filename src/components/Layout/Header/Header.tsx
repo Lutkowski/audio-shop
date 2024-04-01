@@ -16,7 +16,10 @@ const Header = () => {
             <nav className={classes.Header__nav}>
                 <Icon className={classes.Header__Icon} src={likeIcon}></Icon>
                 <Link to="/cart">
-                    <Icon src={cartIcon} className={classes.Header__CartIcon} data-count={itemsCount}></Icon>
+                    <div className={classes.Header__iconWrapper}>
+                        <Icon src={cartIcon} className={classes.Header__CartIcon} data-count={itemsCount}></Icon>
+                        {itemsCount > 0 && <span className={classes.Header__counter}>{itemsCount}</span>}
+                    </div>
                 </Link>
             </nav>
         </header>

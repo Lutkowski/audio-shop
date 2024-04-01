@@ -13,7 +13,26 @@
 }
 
 
-.Header__CartIcon{
+.Header__iconWrapper{
     position: relative;
+}
+
+.Header__counter{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 18px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
