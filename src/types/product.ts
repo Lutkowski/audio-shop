@@ -3,5 +3,6 @@ export interface Product {
     name: string;
     rating: number;
     price: number;
+    oldPrice?: number;
     img: string;
 }

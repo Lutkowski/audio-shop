@@ -20,6 +20,7 @@ const ProductSection: React.FC<ProductSectionProps> = ({title, products}) => {
                         rating={product.rating}
                         price={product.price}
                         img={product.img}
+                        oldPrice = {product.oldPrice}
                     />
                 ))}
             </div>

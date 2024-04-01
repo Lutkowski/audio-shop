@@ -11,7 +11,7 @@ const useProductStore = create(() => ({
         {
             title: "Наушники",
             products: [
-                { id: '1', name: 'Apple BYZ S852I', rating: 4.7, price: 2927, img: headphone_1},
+                { id: '1', name: 'Apple BYZ S852I', rating: 4.7, price: 2927, oldPrice:3527, img: headphone_1},
                 { id: '2', name: 'Apple EarPods', rating: 4.5, price: 2327, img: headphone_2 },
                 { id: '3', name: 'Apple EarPods', rating: 4.5, price: 2327, img: headphone_3 },
                 { id: '4', name: 'Apple BYZ S852I', rating: 4.7, price: 2927, img: headphone_1 },

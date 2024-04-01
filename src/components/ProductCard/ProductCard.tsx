@@ -7,7 +7,7 @@ import classes from "./ProductCard.module.css"
 import Button from "../UI/Button/Button.tsx";
 
 
-const ProductCard: React.FC<Product> = ({id,  name, rating, price, img }) => {
+const ProductCard: React.FC<Product> = ({id,  name, rating, price, img, oldPrice }) => {
     const addToCart = useCartStore(state => state.addToCart);
 
     const handleAddToCart = () => {
@@ -18,7 +18,12 @@ const ProductCard: React.FC<Product> = ({id,  name, rating, price, img }) => {
             <img src={img} alt={name} className={classes.ProductCard__image}/>
             <div className={classes.ProductCard__info}>
                 <h3 className={classes.ProductCard__title}>{name}</h3>
-                <div className={classes.ProductCard__price}>{price} ₽</div>
+                <div className={classes.ProductCard__prices}>
+                    <div className={classes.ProductCard__price}>{price} ₽</div>
+                    {oldPrice && (
+                        <div className={classes.ProductCard__oldPrice}>{oldPrice} ₽</div>
+                    )}
+                </div>
                 <div className={classes.ProductCard__rating}>
                     <Icon src={starIcon}></Icon>
                     <span>{rating}</span>
