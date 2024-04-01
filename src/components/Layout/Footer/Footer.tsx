@@ -4,6 +4,7 @@ import vkIcon from "../../../assets/VK.svg";
 import telegramIcon from "../../../assets/Telegram.svg";
 import whatsappIcon from "../../../assets/Whatsapp.svg";
 import classes from "./Footer.module.css"
+import globe from "../../../assets/globe.svg"
 
 const Footer = () => {
     return (
@@ -19,7 +20,10 @@ const Footer = () => {
             </nav>
             <ul className={classes.Footer__list}>
                 <li>Условия сервиса</li>
-                <li>Eng</li>
+                <li className={classes.language}>
+                    <Icon src={globe}></Icon>
+                    <span>Рус</span>
+                </li>
             </ul>
             <div>
             <ul className={classes.Footer__media}>
