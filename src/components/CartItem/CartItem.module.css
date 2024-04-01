@@ -46,3 +46,8 @@
     background: rgb(255, 206, 127);
     border-radius: 50%;
 }
+@media (max-width: 768px) {
+    .CartItem__image{
+        width: 100px;
+    }
+}

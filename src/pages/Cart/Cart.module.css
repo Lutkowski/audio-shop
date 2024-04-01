@@ -7,3 +7,9 @@
 .content{
     min-height: 64.5vh;
 }
+
+@media (max-width: 768px) {
+    .Cart{
+        column-gap: 20px;
+    }
+}

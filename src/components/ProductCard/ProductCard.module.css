@@ -30,6 +30,9 @@
 .ProductCard__title{
     margin:0;
     color:rgb(28, 28, 39);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
 }
 .ProductCard__prices{
     display: flex;
@@ -64,4 +67,9 @@
     transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+    .ProductCard__title{
+        font-size: 15px;
+    }
+}
 
